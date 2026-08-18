@@ -4,6 +4,7 @@ const int RED_LED = 4;
 const int BLUE_LED = 12;
 const int BUZZER = 13;
 
+//you cah change for more if want
 const int MAX_SEQUENCE = 50;
 
 int sequence[MAX_SEQUENCE];
