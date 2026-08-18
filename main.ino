@@ -32,8 +32,29 @@ void setup() {
   showSequence();
 }
 
-void loop(){
-  
+void loop() {
+
+  for (int i = 0; i < sequenceLength; i++) {
+
+    int playerInput = waitForButton();
+
+    // answer check
+    if (playerInput != sequence[i]) {
+      gameOver();
+      return;
+    }
+    playMove(playerInput);
+  }
+
+  delay(300);
+
+//adds move
+if (sequenceLength < MAX_SEQUENCE) {
+    sequence[sequenceLength] = random(0, 2);
+    sequenceLength++;
+  }
+
+  showSequence();
 }
 
 void showSequence() {
@@ -43,6 +64,30 @@ void showSequence() {
     playMove(sequence[i]);
 
     delay(250);
+  }
+}
+
+int waitForButton() {
+
+  while (true) {
+
+    if (digitalRead(BUTTON1) == LOW) {
+
+      delay(30); //deb
+
+      while (digitalRead(BUTTON1) == LOW);
+
+      return 0;
+    }
+
+    if (digitalRead(BUTTON2) == LOW) {
+
+      delay(30); //dev
+
+      while (digitalRead(BUTTON2) == LOW);
+
+      return 1;
+    }
   }
 }
 
@@ -66,10 +111,25 @@ void playMove(int move) {
     tone(BUZZER, 900);
 
     delay(250);
-
     digitalWrite(BLUE_LED, LOW);
     noTone(BUZZER);
   }
 
   delay(100);
+}
+void gameOver() {
+  tone(BUZZER, 300);
+  digitalWrite(RED_LED, HIGH);
+  digitalWrite(BLUE_LED, HIGH);
+  delay(500);
+
+  noTone(BUZZER);
+  digitalWrite(RED_LED, LOW);
+  digitalWrite(BLUE_LED, LOW);
+
+  delay(500);
+  sequenceLength = 1;
+  sequence[0] = random(0, 2);
+
+  showSequence();
 }
