@@ -7,7 +7,17 @@ I did this beause I made a project before on reaction time and thought this woul
 You can any model of aruidno r4 or r3 or any equivalenet microcontroler. To set it up simply just wire as shown in the schema and then you can also upload the code to your arduino through the arduino's own ide and you would be all good. 
 
 BOM:
-
+| Item | Quantity | Unit | Estimated Unit Price (USD) | Estimated Total (USD) | Purpose |
+|---|---:|---|---:|---:|---|
+| Push Button | 2 | pcs | $0.20 | $0.40 | Player input buttons |
+| Red 5mm LED | 1 | pcs | $0.10 | $0.10 | Red game indicator |
+| Blue 5mm LED | 1 | pcs | $0.10 | $0.10 | Blue game indicator |
+| 220 Ohm Resistor | 2 | pcs | $0.05 | $0.10 | LED current limiting |
+| Passive Buzzer | 1 | pcs | $0.50 | $0.50 | Audio feedback |
+| Solderless Breadboard | 1 | pcs | $6.00 | $6.00 | Circuit prototyping |
+| Male-to-Male Jumper Wires | 10 | pcs | $0.15 | $1.50 | Electrical connections |
+| Arduino UNO R4 WiFi (or equivalent) | 1 | pcs | $27.00 | $27.00 | Microcontroller |
+| **TOTAL** | | | | **$35.70** | **Estimated project total** |
 
 Demo vid: https://www.youtube.com/watch?v=BlU3b64rzTM
 
