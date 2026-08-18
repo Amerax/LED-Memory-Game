@@ -6,6 +6,10 @@ I did this beause I made a project before on reaction time and thought this woul
 
 You can any model of aruidno r4 or r3 or any equivalenet microcontroler. To set it up simply just wire as shown in the schema and then you can also upload the code to your arduino through the arduino's own ide and you would be all good. 
 
+Coded using ino c++ code and the arduino ide. 
+
+When you start, you have 2 buttons and 2 leds matched up, the leds will start turning on in a sequence, and your goal is to reproduce that sequence (ex: red, blue, red or red,red,blue). A extra step/led will be added to the sequence every turn until you mess up to which it will restart. 
+
 BOM:
 | Item | Quantity | Unit | Estimated Unit Price (USD) | Estimated Total (USD) | Purpose |
 |---|---:|---|---:|---:|---|
