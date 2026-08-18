@@ -19,6 +19,16 @@ BOM:
 | Arduino UNO R4 WiFi (or equivalent) | 1 | pcs | $27.00 | $27.00 | Microcontroller |
 | **TOTAL** | | | | **$35.70** | **Estimated project total** |
 
+Pin Mapping
+
+| Component | Arduino Pin | Connection |
+|---|---:|---|
+| Button 1 | D2 | Button → GND |
+| Button 2 | D3 | Button → GND |
+| Red LED | D4 | D4 → 220Ω resistor → LED → GND |
+| Blue LED | D12 | D12 → 220Ω resistor → LED → GND |
+| Passive Buzzer | D13 | Positive → D13, Negative → GND |
+
 Demo vid: https://www.youtube.com/watch?v=BlU3b64rzTM
 
 <img width="1205" height="475" alt="image" src="https://github.com/user-attachments/assets/a7b6c1b4-99fc-4419-9d24-087dd9eb38dd" />
