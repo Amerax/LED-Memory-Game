@@ -33,6 +33,14 @@ Pin Mapping
 | Blue LED | D12 | D12 → 220Ω resistor → LED → GND |
 | Passive Buzzer | D13 | Positive → D13, Negative → GND |
 
+**Uploading the Code**  
+
+1. Open `main.ino` in the Arduino IDE either download the file and open it, or just copy and paste its contents into the ide yourself.  
+2. Connect your Arduino to your computer with a USB cable.  
+3. Select the correct **Board** and **Port** under **Tools**.  
+4. Click **Upload** (→).  
+5. Wait for the upload to finish. The Arduino will automatically restart and run the program. 
+
 Demo vid: https://www.youtube.com/watch?v=BlU3b64rzTM
 
 <img width="1205" height="475" alt="image" src="https://github.com/user-attachments/assets/a7b6c1b4-99fc-4419-9d24-087dd9eb38dd" />
